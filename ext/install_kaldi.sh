@@ -3,6 +3,7 @@
 # Prepare Kaldi
 cd kaldi/tools
 make clean
+./extras/check_dependencies.sh
 make
 ./extras/install_openblas.sh
 cd ../src

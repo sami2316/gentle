@@ -1,0 +1,11 @@
+version: '3'
+services:
+  gentle:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./webdata:/gentle/webdata
+    ports:
+      - 8765:8765
+
